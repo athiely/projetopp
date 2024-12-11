@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/css/cadastro.css">
+    <title>Smart Nutri</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href = "{{ url_for('index')}}">
+                <img src="static/img/smart_nutri_pngg[1].png" alt="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('funcionalidades')}}">Funcionalidades</a></li>
+                    <li><a href="#" id="contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="form-container">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="NOME COMPLETO">
+                
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="text" id="nascimento" placeholder="DD/MM/AAAA">
+                
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" placeholder="000.000.000-00">
+                
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" placeholder="RUA ALEGRE, 123, BAIRRO TANANA">
+
+                <button>ENVIAR</button>
+            </div>
+
+            <div class="image-container">
+                <img src="static/img/loginfoto.png" alt="Imagem de plano de refeição">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="beneficios-container">
+            <h2>Beneficios</h2>
+            <p id="fique">Fique por dentro do SmartNutri</p>
+            <div class="beneficios">
+                <div class="beneficios-item">
+                    <h3>Acompanhe seu desempenho junto com seu nutri</h3>
+                    <p>Veja todo o percurso da sua jornada para uma melhor qualidade de vida!</p>
+                </div>
+                <div class="beneficios-item">
+                    <h3>Consulte sua dieta e agenda</h3>
+                    <p>Consulte onde e quando quiser</p>
+                </div>
+                <div class="beneficios-item">
+                    <h3>Compartilhe seu trabalho com outras pessoas</h3>
+                    <p>Faça posts e permita que outros vejam mais do seu trabalho, alcance mais clientes!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
